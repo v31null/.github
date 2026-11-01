@@ -2,11 +2,9 @@
 
 SEC. 1. SCOPE.
 
-    (a) IN GENERAL.—This policy applies to—
-        (1) each public repository of v31null; and
-        (2) Prono.
+    (a) IN GENERAL.—This policy applies to each owned system.
 
-    (b) V31NULL HUB.—The V31null Hub is open source. A reporter may submit a problem in the V31null Hub as a pull request on https://github.com/v31null/v31nhub.
+    (b) PULL REQUESTS.—The V31null Hub and standartas are open source. A reporter may submit a problem in the V31null Hub or in standartas as a pull request on https://github.com/v31null/v31nhub or https://github.com/v31null/standartas, respectively.
 
 SEC. 2. DEFINITIONS.
 
@@ -19,16 +17,25 @@ SEC. 2. DEFINITIONS.
             (D) deleting the data or making the data unreadable; and
             (E) sending the data to any person or system.
 
-        (2) ACCOUNT OF THE REPORTER.—The term “account of the reporter” means an account on Prono that the reporter created and controls.
+        (2) ACCOUNT OF THE REPORTER.—The term “account of the reporter” means anything that the reporter created or installed and controls, including—
+            (A) an account on Prono;
+            (B) an operating system;
+            (C) a local virtual machine;
+            (D) a container or emulator;
+            (E) a physical device;
+            (F) a local install of a programme; and
+            (G) a local copy of a file or repository.
 
         (3) ANOTHER SYSTEM.—The term “another system” means any system other than the system in which a problem is found, including another owned system and a third party.
 
-        (4) ANOTHER USER.—The term “another user” means a person who holds an account on Prono that is not an account of the reporter.
+        (4) ANOTHER USER.—The term “another user” means a person who uses an owned system and is not the reporter.
 
         (5) BACKDOOR.—The term “backdoor” means a means of access that the reporter places in an owned system and that remains after the test ends, including—
             (A) an account, session, token, or key;
             (B) a file or program; and
             (C) a changed setting or permission.
+
+        (5A) CRAFTED .V31NP FILE.—The term “crafted .v31np file” means a .v31np file that the reporter builds or alters to make a reader of .v31np files fail.
 
         (6) DATA.—The term “data” means any information that relates to a user, whether stored or in transit, including—
             (A) a message, reply, reaction, like, or pin;
@@ -47,18 +54,23 @@ SEC. 2. DEFINITIONS.
 
         (9) FIX.—A problem is fixed when v31null tells the reporter that the problem is fixed.
 
-        (10) HARMFUL FILE.—The term “harmful file” means a file made to damage, take control of, or take data from a device or program that opens or processes the file.
+        (10) HARMFUL FILE.—The term “harmful file” means a file made to damage, take control of, or take data from a device or program that opens or processes the file, including a crafted .v31np file.
+
+        (10A) INTENDED BEHAVIOUR.—The term “intended behaviour” means a behaviour of an owned system that v31null sets out as intended, including in a standard, in documentation, or in code.
 
         (11) OWNED SYSTEM.—The term “owned system” means—
-            (A) each host and service that v31null operates and that a Prono client or the V31null Hub connects to;
-            (B) each Prono client and the V31null Hub; and
-            (C) each public repository of v31null.
+            (A) each host and service that v31null operates;
+            (B) each Prono client and the V31null Hub;
+            (C) each public repository of v31null; and
+            (D) each programme, installer, build, and release that v31null publishes, now or in the future.
 
         (12) PERMANENT ACCESS.—The term “permanent access” means any ability to access an owned system that remains after the test ends.
 
         (13) PROBLEM.—
             (A) IN GENERAL.—The term “problem” means a flaw in an owned system through which a person can act beyond what the owned system permits that person.
             (B) EXCLUSION.—The term “problem” does not include social engineering, meaning the deception of a user into giving a person access, data, or an action. Social engineering is a matter of the user and not of an owned system.
+            (C) INTENDED BEHAVIOUR.—The term “problem” does not include an intended behaviour.
+            (D) CONFORMANCE.—The term “problem” does not include the conformance of a programme or file with a standard of v31null. v31null is not a conformance agency. Developers see to conformance on their own or through an agency that they establish.
 
         (14) PRONO.—The term “Prono” means the Services for þe General populace Maß Tele-kommunikation services namen as prono.
 
@@ -85,12 +97,15 @@ SEC. 2. DEFINITIONS.
             (C) an email provider;
             (D) a media host or media proxy;
             (E) a provider of an embedded service;
-            (F) a package registry; and
-            (G) a network provider.
+            (F) a package registry;
+            (G) a network provider; and
+            (H) an operating system or host programme.
 
         (23) THREAT.—The term “threat” means a statement that the reporter will publish, exploit, or otherwise use a problem unless v31null does or gives something.
 
-        (24) V31NULL.—The term “v31null” means the operator of each owned system.
+        (24) V31NULL.—The terms “v31null” and “v31n” have the same meaning and denote origin. They refer to—
+            (A) a system, standard, programme, & hoc genus omne which embodies the principles, standards, regulations, laws, by-laws, and similar of prinz, no matter if the person performing it being of prinzian origin or not; or
+            (B) v31null himself.
 
         (25) V31NULL HUB.—The term “V31null Hub” means the program published in the public repository v31null/v31nhub.
 
@@ -104,12 +119,12 @@ SEC. 4. CONDUCT.
 
     (a) PERMITTED ACTIONS.—A reporter may—
         (1) test an owned system, including through a third party that carries traffic to the owned system;
-        (2) unpack, decompile, or otherwise take apart a Prono client or the V31null Hub;
+        (2) unpack, decompile, or otherwise take apart a Prono client, the V31null Hub, or any programme, installer, build, or release that v31null publishes;
         (3) create accounts;
         (4) run automated scanners;
         (5) take the service down once to prove a problem;
         (6) upload a harmful file to an account of the reporter;
-        (7) direct a message, request, notification, or telegram to an account of the reporter; and
+        (7) direct a message, request, or notification to an account of the reporter; and
         (8) access the data of an account of the reporter.
 
     (b) PROHIBITED ACTIONS.—A reporter may not—
@@ -117,11 +132,15 @@ SEC. 4. CONDUCT.
         (2) access the data of another user;
         (3) leave a backdoor, keep permanent access, or use a problem to enter another system;
         (4) deliver a harmful file to another user;
-        (5) direct a message, request, notification, or telegram to another user as part of a test;
-        (6) publish a problem before v31null fixes the problem; or
-        (7) make a threat in connection with a report.
+        (5) direct a message, request, or notification to another user as part of a test;
+        (6) publish a problem before v31null fixes the problem;
+        (7) make a threat in connection with a report;
+        (8) test an intended behaviour, including with a payload; or
+        (9) submit a report on conformance.
 
     (c) DATA OF OTHER USERS.—A reporter who obtains the data of another user shall delete the data.
+
+    (d) CRAFTED .V31NP FILES.—A reporter may use a crafted .v31np file only to test whether the reading of its header or of its files leads to an overflow or another flaw that allows an exploit.
 
 SEC. 5. REPORT FORM.
 
@@ -137,7 +156,7 @@ SEC. 5. REPORT FORM.
 | Part II — Classification | |
 |---|---|
 | 2. Urgent | [] Yes [] No |
-| 3. Project | [] Prono web [] Prono desktop [] Prono Android [] V31null Hub [] Other: |
+| 3. Project | [] Prono web [] Prono desktop [] Prono Android [] V31null Hub [] Secura [] M2 [] .v31np Windows [] Other: |
 | 4. Version | |
 | 5. Date and time observed | |
 | 6. Location | |
