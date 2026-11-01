@@ -111,7 +111,7 @@ SEC. 2. DEFINITIONS.
 
 SEC. 3. REPORTING.
 
-    (a) PRONO.—A reporter shall send a report on Prono to Kokain#8467 at https://prono.share.zrok.io.
+    (a) PRONO.—A reporter shall send a report on Prono to Kokain#8467 at https://prono.v31null.de
 
     (b) GITHUB.—If Prono cannot be reached, a reporter shall submit the report through GitHub private vulnerability reporting on any public repository of v31null (Security → Report a vulnerability).
 
