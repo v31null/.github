@@ -144,8 +144,14 @@ SEC. 4. CONDUCT.
 
 SEC. 5. REPORT FORM.
 
-    A reporter shall copy the form below into the report and complete the form.
+    (a) STATUTORY MINIMUM.—A reporter shall include in a report at least every field set out in Parts I through VI of the form in subsection (d).
 
+    (b) FORMAT AND ADDITIONS.—For Parts I through VI, a reporter may copy the layout of the form in subsection (d) or present the required fields in any clear format, such as a flat list or plain text, and may include additional fields or information.
+
+    (c) OFFICIAL USE BLOCK.—The freedom under subsection (b) does not apply to the bracketed block at the end of the form beginning with “[Emendetur” and ending with the closing “]”, which is reserved solely for official use and system permissions. A reporter shall include that block verbatim at the end of the report and may not fill in, alter, omit, reformat, or replace any character, line break, space, or symbol from “[Emendetur” through the closing “]”. A report in which any part of that block is omitted, filled in, or altered in any way is invalid and shall be rejected.
+
+    (d) FORM.—Subject to subsections (a) through (c), a reporter may copy the form below into the report and complete the form:
+    
 ```text
 # Vulnerability Report
 
@@ -190,9 +196,13 @@ SEC. 5. REPORT FORM.
 | 15. Signature | |
 | 16. Date | |
 
-| For official use only | |
+[Emendetur
+@224762964460441 
+
+| ŻAÚSAÍUN̈ÍNT EKTA RAÚZÙAS SÍZȚA | |
 |---|---|
 | Received | |
 | Reference | |
 | Status | |
+]
 ```
