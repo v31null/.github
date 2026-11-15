@@ -26,6 +26,7 @@ SEC. 2. DEFINITIONS.
             (F) a local install of a programme;
             (G) a local copy of a file or repository; and
             (H) an account on the V31N Portal or on any owned system.
+            
 
         (3) ANOTHER SYSTEM.—The term “another system” means any system other than the system in which a problem is found, including another owned system and a third party.
 
@@ -84,6 +85,8 @@ SEC. 2. DEFINITIONS.
             (C) INTENDED BEHAVIOUR.—The term “problem” does not include an intended behaviour.
             (D) CONFORMANCE.—The term “problem” does not include the conformance of a programme or file with a standard of v31null. v31null is not a conformance agency. Developers see to conformance on their own or through an agency that they establish.
             (E) RESOURCE OR QUOTA EXHAUSTION.—The term “problem” does not include the exhaustion, saturation, or triggering of any finite quota, capacity, slot, storage, bandwidth, or rate limit by repeatedly or excessively invoking a normal function of an owned system or of a third party, nor any failure, slowdown, or unavailability resulting from that exhaustion.
+            (F) NON-PUBLIC TEST ENVIRONMENTS AND SPECIAL ACCESS.—The term “problem” does not include a condition that exists solely within, or can be reached only by means of, a non-public test sandbox or special access granted personally to the reporter, unless the affected component, isolation boundary, or flaw is reachable by the public or shared with a public or production owned system.
+
 
         (14) PRONO.—The term “Prono” means the Services for þe General populace Maß Tele-kommunikation services namen as prono.
 
@@ -172,6 +175,7 @@ SEC. 4. CONDUCT.
             (D) WHAT CONSTITUTES A FIX.—For purposes of this policy and section 2(9), a problem counts as fixed only when—
                 (i) v31null has deployed a patch, released an update, merged a remediation, or otherwise resolved or closed the flaw; and
                 (ii) v31null expressly notifies the reporter, directly or by updating the official use block of the form under section 5, that the problem is fixed;
+            (E) INCOMPLETE FIXES, BYPASSES, AND REGRESSIONS.—If a reporter, while verifying a fix or conducting permitted testing, discovers that a fix is incomplete, can be bypassed, or has introduced a new problem, the reporter shall report that bypass or new problem under section 3 and section 5, and the prohibition on publication under this paragraph applies until that bypass or new problem is itself fixed under subparagraph (D);
         (7) make a threat in connection with a report;
         (8) test an intended behaviour, including with a payload;
         (9) submit a report on conformance;
@@ -290,6 +294,9 @@ SEC. 7. GOOD-FAITH SECURITY RESEARCH.
             (B) ceases immediately once the imminent harm is halted and submits an Urgent report under section 3 and section 5; and
             (C) proves the active or imminent harm, necessity, and proportionality with verifiable receipts, including logs, captures, timestamps, and technical records.
         v31null recognizes this defence solely under v31null’s own law and policy and cannot confer authorization over third-party systems that v31null does not have jurisdiction over.
+    (e) COMPUTATIONAL BOUNDARIES AND SANDBOXES.—
+        (1) PUBLICLY REACHABLE SYSTEMS AND BOUNDARIES.—Where a publicly reachable owned system, boundary, or sandbox separates accounts, files, roles, or areas by code, configuration, or access controls, authorization extends only to the reporter’s authorized area. The failure, weakness, or bypass of a technical barrier does not authorize crossing it: a reporter may confirm with minimal, non-destructive proof that the barrier fails, but shall stop at the threshold without enumerating, browsing, altering, or pivoting into the restricted area, another system, data of another user, or sensitive material.
+        (2) SANDBOXES EXPLICITLY CARVED FOR A REPORTER.—Where an active sandbox or scoped environment is explicitly carved for a reporter under section 8(d)(2), testing is authorized solely within the exact boundaries and scope carved out in that instrument. A reporter may not attempt to escape, exceed, or pivot out of that sandbox—nor rely on boundary-testing under paragraph (1) as a defence—unless that sandbox is itself publicly reachable or testing that isolation boundary is expressly authorized in the section 8(d)(2) instrument.
 
 SEC. 8. EXCLUSIVITY OF WRITTEN POLICY; LIMITATIONS ON AGENCY AND INSTRUCTIONS.
 
@@ -301,7 +308,10 @@ SEC. 8. EXCLUSIVITY OF WRITTEN POLICY; LIMITATIONS ON AGENCY AND INSTRUCTIONS.
 
     (d) SOLE MANNER OF AMENDMENT OR EXCEPTION.—An amendment to, or exception from, this policy is effective only if it is—
         (1) published by v31null as an amendment to this policy; or
-        (2) set out in an express written instrument personally signed by v31null with a valid v31null eID or v31null TL-signing certificate verifiable against the v31null trusted list.
+        (2) set out in an express written instrument, subject to all of the following conditions:
+            (A) OFFICIAL PADES SIGNATURE AND STATUS.—The instrument must bear a valid, intact electronic signature personally created by v31null using a v31null eID or v31null TL-signing certificate, verified by the relying person against the v31null trusted list, certificate revocation lists, and OCSP responder as valid and unrevoked at the time of reliance.
+            (B) ACTUAL EXISTENCE OF TARGET.—The specific sandbox, environment, endpoint, or scope designated in the instrument must actually exist and be currently provisioned and active at the time of the act.
+            (C) INACTIVE AUTHORIZATION.—If the target or sandbox designated in the instrument does not exist, has not yet been provisioned, or has been decommissioned or withdrawn, the authorization is an inactive authorization, even though the signed instrument remains unrevoked, and confers no permission to probe for, infer, or test any system.
     No oral assurance, unsigned writing, or signature by proxy satisfies this subsection.
 
 SEC. 9. CLASSIFICATION OF DEVIATIONS: VERT, OR, AND GULES.
