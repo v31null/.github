@@ -23,12 +23,16 @@ SEC. 2. DEFINITIONS.
             (C) a local virtual machine;
             (D) a container or emulator;
             (E) a physical device;
-            (F) a local install of a programme; and
-            (G) a local copy of a file or repository.
+            (F) a local install of a programme;
+            (G) a local copy of a file or repository; and
+            (H) an account on the V31N Portal or on any owned system.
 
         (3) ANOTHER SYSTEM.—The term “another system” means any system other than the system in which a problem is found, including another owned system and a third party.
 
-        (4) ANOTHER USER.—The term “another user” means a person who uses an owned system and is not the reporter.
+        (4) ANOTHER USER.—The term “another user” means a natural person (and not an automated system or machine account) other than the reporter who uses, operates, or administers an owned system, including—
+            (A) another account holder;
+            (B) a Help Desk operator or registration officer; and
+            (C) an administrator of v31null.
 
         (5) BACKDOOR.—The term “backdoor” means a means of access that the reporter places in an owned system and that remains after the test ends, including—
             (A) an account, session, token, or key;
@@ -45,14 +49,20 @@ SEC. 2. DEFINITIONS.
             (E) a session, token, cookie, or key;
             (F) a friendship, friend request, or block;
             (G) a membership in a group, server, channel, or theatre;
-            (H) a read state, presence, status, or activity; and
-            (I) a log entry or record about the user.
+            (H) a read state, presence, status, or activity;
+            (I) a log entry or record about the user;
+            (J) an FRNI and any personal details submitted to compute or verify an FRNI;
+            (K) a Help Desk ticket, message, attachment, identity document, or third-party detail appearing on such a document;
+            (L) an eID application, approval record, eID certificate, or revocation record; and
+            (M) an OIDC link, authorization code, access token, recovery booking, recovery event, or sealed data copy.
 
         (7) DELETE.—The term “delete” means to remove each copy that the reporter holds, including a screenshot, recording, note, and backup.
 
         (8) DELIVER.—The term “deliver” means to make available to another user, including through a message, attachment, avatar, ambiance image, group image, emoji, or link.
 
-        (9) FIX.—A problem is fixed when v31null tells the reporter that the problem is fixed.
+        (9) FIX.—A problem is fixed when the conditions in section 4(b)(6)(D) are met.
+
+        (9A) FRNI.—The term “FRNI” (or “P.I. №”) means a fifteen-digit Private Personal Identification Number assigned by the V31N Portal, including its internal lookup, hash, and sequence values and the registration or recovery source details used to compute it.
 
         (10) HARMFUL FILE.—The term “harmful file” means a file made to damage, take control of, or take data from a device or program that opens or processes the file, including a crafted .v31np file.
 
@@ -61,8 +71,10 @@ SEC. 2. DEFINITIONS.
         (11) OWNED SYSTEM.—The term “owned system” means—
             (A) each host and service that v31null operates;
             (B) each Prono client and the V31null Hub;
-            (C) each public repository of v31null; and
-            (D) each programme, installer, build, and release that v31null publishes, now or in the future.
+            (C) each public repository of v31null;
+            (D) each programme, installer, build, and release that v31null publishes, now or in the future;
+            (E) v31null.de, the V31N Portal (portal.v31null.de), and the Help Desk; and
+            (F) each trust service operated by v31null.
 
         (12) PERMANENT ACCESS.—The term “permanent access” means any ability to access an owned system that remains after the test ends.
 
@@ -71,6 +83,7 @@ SEC. 2. DEFINITIONS.
             (B) EXCLUSION.—The term “problem” does not include social engineering, meaning the deception of a user into giving a person access, data, or an action. Social engineering is a matter of the user and not of an owned system.
             (C) INTENDED BEHAVIOUR.—The term “problem” does not include an intended behaviour.
             (D) CONFORMANCE.—The term “problem” does not include the conformance of a programme or file with a standard of v31null. v31null is not a conformance agency. Developers see to conformance on their own or through an agency that they establish.
+            (E) RESOURCE OR QUOTA EXHAUSTION.—The term “problem” does not include the exhaustion, saturation, or triggering of any finite quota, capacity, slot, storage, bandwidth, or rate limit by repeatedly or excessively invoking a normal function of an owned system or of a third party, nor any failure, slowdown, or unavailability resulting from that exhaustion.
 
         (14) PRONO.—The term “Prono” means the Services for þe General populace Maß Tele-kommunikation services namen as prono.
 
@@ -79,11 +92,22 @@ SEC. 2. DEFINITIONS.
             (B) the pronal desktop application for Windows and for Linux; and
             (C) the pronal application for Android.
 
+        (15A) PROTECTED SERVICE.—The term “protected service” means any owned system or component that may not be taken down, disrupted, or degraded even once, including—
+            (A) each trust service;
+            (B) the Help Desk; and
+            (C) any email-sending pipeline.
+
         (16) PUBLISH.—The term “publish” means to make information available to any person other than v31null.
 
-        (17) REPORT.—The term “report” means a completed report form under section 5.
+        (17) REPORT.—The term “report” means a completed report satisfying section 5.
 
         (18) REPORTER.—The term “reporter” means a person who tests an owned system or submits a report.
+
+        (18A) SENSITIVE MATERIAL.—The term “sensitive material” means—
+            (A) any cryptographic key or secret used by v31null, including certification authority keys, electronic seal keys, trusted-list signing keys, lookup or HMAC keys, Help Desk or ticket keys, and session or token secrets;
+            (B) any offline copy, offline key backup, or key-ceremony material;
+            (C) any FRNI, any source personal details used to compute or verify an FRNI, any identity document submitted to the Help Desk (including any third party shown on it), any eID approval record, and any private eID key; and
+            (D) any non-public internal record, including confidential compliance or personal information records, internal audit or chain-of-custody logs, and non-public issued-certificate lists.
 
         (19) TAKE THE SERVICE DOWN.—The term “take the service down” means to make an owned system unavailable to users or to slow the owned system so that users cannot use it.
 
@@ -103,11 +127,15 @@ SEC. 2. DEFINITIONS.
 
         (23) THREAT.—The term “threat” means a statement that the reporter will publish, exploit, or otherwise use a problem unless v31null does or gives something.
 
+        (23A) TRUST SERVICE.—The term “trust service” means any certificate, signature, seal, or validation service operated by v31null, including certification authorities, v31null eIDs, the electronic seal of v31null, the v31null trusted list, certificate revocation lists, certification authority revocation lists, the OCSP responder, the signing service, and the daemons and pipelines supporting them.
+
         (24) V31NULL.—The terms “v31null” and “v31n” have the same meaning and denote origin. They refer to—
             (A) a system, standard, programme, & hoc genus omne which embodies the principles, standards, regulations, laws, by-laws, and similar of prinz, no matter if the person performing it being of prinzian origin or not; or
             (B) v31null himself.
 
         (25) V31NULL HUB.—The term “V31null Hub” means the program published in the public repository v31null/v31nhub.
+
+        (26) HELP DESK.—The term “Help Desk” means the V31N Help Desk used for account recovery, identity verification, eID approval, and eID revocation.
 
 SEC. 3. REPORTING.
 
@@ -122,7 +150,7 @@ SEC. 4. CONDUCT.
         (2) unpack, decompile, or otherwise take apart a Prono client, the V31null Hub, or any programme, installer, build, or release that v31null publishes;
         (3) create accounts;
         (4) run automated scanners;
-        (5) take the service down once to prove a problem;
+        (5) take the service down once to prove a problem, except a protected service under section 2(15A);
         (6) upload a harmful file to an account of the reporter;
         (7) direct a message, request, or notification to an account of the reporter; and
         (8) access the data of an account of the reporter.
@@ -133,14 +161,32 @@ SEC. 4. CONDUCT.
         (3) leave a backdoor, keep permanent access, or use a problem to enter another system;
         (4) deliver a harmful file to another user;
         (5) direct a message, request, or notification to another user as part of a test;
-        (6) publish a problem before v31null fixes the problem;
+        (6) publish a problem before v31null fixes the problem, subject to the following:
+            (A) ACKNOWLEDGMENT AND FORM.—
+                (i) IN GENERAL.—A report shall be acknowledged by v31null in the official use block of the form under section 5, and an approximate duration for handling or remediation may be noted in the margins or fields of that block.
+                (ii) ACTUAL ACKNOWLEDGMENT.—Once v31null actually acknowledges a report, the report is deemed acknowledged ipso facto and ab initio, unless and until v31null states otherwise.
+            (B) RESPONSE PERIOD.—The expected response period for v31null to acknowledge a report is—
+                (i) 14 days for a report submitted on Prono under section 3(a); and
+                (ii) 30 days for a report submitted over any other platform, including GitHub under section 3(b).
+            (C) EFFECT OF NON-RESPONSE OR DELAY.—If v31null does not respond within the applicable period under subparagraph (B), or does not resolve the problem within any approximate duration noted under subparagraph (A)(i), the prohibition on publication under this paragraph remains in full force. Silence or delay does not lift the prohibition.
+            (D) WHAT CONSTITUTES A FIX.—For purposes of this policy (including section 2(9)), a problem counts as fixed only when—
+                (i) v31null has deployed a patch, released an update, merged a remediation, or otherwise resolved or closed the flaw; and
+                (ii) v31null expressly notifies the reporter (whether directly or by updating the official use block of the form under section 5) that the problem is fixed;
         (7) make a threat in connection with a report;
-        (8) test an intended behaviour, including with a payload; or
-        (9) submit a report on conformance.
+        (8) test an intended behaviour, including with a payload;
+        (9) submit a report on conformance;
+        (10) attempt to decode, reverse, brute-force, or derive source details from any FRNI (including an FRNI of an account of the reporter), or probe any endpoint to enumerate FRNIs or sequence numbers;
+        (11) as part of a test, mint, forge, alter, or fraudulently obtain a v31null eID, electronic seal, certificate revocation list, certification authority revocation list, OCSP response, or trusted list entry, abuse the signing service, or trigger a false revocation (though a person who encounters such a flaw in regular usage without conducting a prohibited test may report it);
+        (12) search for, access, extract, decrypt, copy, or retain any sensitive material; or
+        (13) cause resource or quota exhaustion described in section 2(13)(E), or upload a harmful file to a Help Desk ticket.
 
-    (c) DATA OF OTHER USERS.—A reporter who obtains the data of another user shall delete the data.
+    (c) DATA OF OTHER USERS AND SENSITIVE MATERIAL.—A reporter who obtains the data of another user or any sensitive material shall immediately—and prior to submitting a report—delete every copy of that data or sensitive material, recording only the minimum non-sensitive details (such as endpoint, timestamp, and location) needed to report the flaw.
 
     (d) CRAFTED .V31NP FILES.—A reporter may use a crafted .v31np file only to test whether the reading of its header or of its files leads to an overflow or another flaw that allows an exploit.
+
+    (e) REWARDS.—No reporter is entitled to any bounty, fee, or other reward for a test or report. Any reward, bounty, or recognition is granted solely at the fiat and discretion of v31null.
+
+    (f) FORGERY IN AUTOMATED VERIFICATION TESTS.—Nothing in subsection (b)(11) prohibits submitting a benign forged or invalidly signed document solely to test whether an automated signature, seal, or document verification check fails to reject it, provided the test uses no harmful file, targets no account of another user, and does not result in obtaining an eID or deceiving a natural person.
 
 SEC. 5. REPORT FORM.
 
@@ -189,6 +235,7 @@ SEC. 5. REPORT FORM.
 |---|---|
 | 12. Other users' data accessed | [] Yes [] No |
 | 13. Service taken down | [] No [] Once |
+| 13a. § 4(a)(5) compliance | [] Yes [] No |
 
 | Part VI — Certification | |
 |---|---|
@@ -196,6 +243,7 @@ SEC. 5. REPORT FORM.
 | 15. Signature | |
 | 16. Date | |
 ########## --- FOR OFFICIAL USE ONLY — DO NOT WRITE BELOW THIS LINE ---
+########## Important: do not alter this form. Altered forms may be rejected.
 [Emendetur
 @224762964460441 
 
@@ -206,3 +254,14 @@ SEC. 5. REPORT FORM.
 | Status | |
 ]
 ```
+
+SEC. 6. RULE OF CONSTRUCTION; LAWFUL RECEIPT.
+
+    (a) IN GENERAL.—Notwithstanding any other provision of this policy, a reporter does not violate section 4(b)(2) or section 4(b)(12) solely because an owned system transmits, displays, or otherwise makes available to the reporter any data or sensitive material in the course of—
+        (1) normal, authorized use of an account of the reporter; or
+        (2) a test otherwise permitted under this policy.
+
+    (b) CONTINUING DUTIES.—Subsection (a) excuses only the receipt or observation of the data or sensitive material. If the material received is data of another user or sensitive material not belonging solely to an account of the reporter, the reporter shall still—
+        (1) cease further access to that material;
+        (2) immediately delete every copy of that material in accordance with section 4(c); and
+        (3) refrain from publishing, exploiting, or using that material in accordance with section 4(b)(6).
