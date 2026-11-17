@@ -1,8 +1,8 @@
-**SECURITY POLICY**
+SECURITY POLICY
 
 SEC. 1. SCOPE.
 
-    (a) IN GENERAL.—This policy applies to each owned system.
+    (a) IN GENERAL.—This policy applies to each owned system and, under section 10, to each Prinzian system.
 
     (b) PULL REQUESTS.—The V31null Hub and standartas are open source. A reporter may submit a problem in the V31null Hub or in standartas as a pull request on https://github.com/v31null/v31nhub or https://github.com/v31null/standartas, respectively.
 
@@ -27,7 +27,6 @@ SEC. 2. DEFINITIONS.
             (G) a local copy of a file or repository; and
             (H) an account on the V31N Portal or on any owned system.
             
-
         (3) ANOTHER SYSTEM.—The term “another system” means any system other than the system in which a problem is found, including another owned system and a third party.
 
         (4) ANOTHER USER.—The term “another user” means a natural person, and not an automated system or machine account, other than the reporter who uses, operates, or administers an owned system, including—
@@ -61,6 +60,8 @@ SEC. 2. DEFINITIONS.
 
         (8) DELIVER.—The term “deliver” means to make available to another user, including through a message, attachment, avatar, ambiance image, group image, emoji, or link.
 
+        (8A) DEVELOPER.—The term “developer” means a person who develops a Prinzian system or offers a Prinzian system for use.
+
         (9) FIX.—A problem is fixed when the conditions in section 4(b)(6)(D) are met.
 
         (9A) FRNI.—The terms “FRNI” and “P.I. №” have the same meaning and denote a fifteen-digit Private Personal Identification Number assigned by the V31N Portal, including its internal lookup, hash, and sequence values and the registration or recovery source details used to compute it.
@@ -68,6 +69,27 @@ SEC. 2. DEFINITIONS.
         (10) HARMFUL FILE.—The term “harmful file” means a file made to damage, take control of, or take data from a device or program that opens or processes the file, including a crafted .v31np file.
 
         (10A) INTENDED BEHAVIOUR.—The term “intended behaviour” means a behaviour of an owned system that v31null sets out as intended, including in a standard, in documentation, or in code.
+
+        (10B) INTERVENE.—The term “intervene” means to take one or more of the following measures, in the following order—
+            (A) a binding finding, including on whether a system falls under this policy;
+            (B) an order to show cause;
+            (C) an order to comply;
+            (D) filling a gap in the security declaration policy of an owner with the text of this policy;
+            (E) sending a Practicer General;
+            (F) where the Practicer General is not accepted, a network ban; and
+            (G) after a network ban, a suspension of eIDs, connection tokens, API keys, or connection permits.
+
+        (10C) LEGAL MINIMUM.—The term “legal minimum” means the negative powers only.
+
+        (10D) MEF.—The term “MEF” means the Mbrlí úír Entípatùíțù fùțbíz (Committee for Public Security).
+
+        (10E) MEF SYSTEM.—The term “MEF system” means a Prinzian system owned by MEF or by an agency under MEF, including each owned system.
+
+        (10F) NEGATIVE POWERS.—The term “negative powers” means the prohibitions and duties that this policy imposes, which separate into—
+            (A) the negative powers of the tester, being the duties of a reporter to ensure that the reporter tests safely, as set out in section 4(b) other than paragraph (6), section 4(c), section 4(d), section 4(h), and section 6(b); and
+            (B) the negative powers of the developer, being the duty of a developer to ensure safe programmes.
+
+        (10G) NON-INTERESTING POWERS.—The term “non-interesting powers” means the form and procedure of this policy for MEF systems, as set out in section 3, section 4(b)(6), section 4(e), section 5, section 8, and section 9.
 
         (11) OWNED SYSTEM.—The term “owned system” means—
             (A) each host and service that v31null operates;
@@ -78,6 +100,12 @@ SEC. 2. DEFINITIONS.
             (F) each trust service operated by v31null.
 
         (12) PERMANENT ACCESS.—The term “permanent access” means any ability to access an owned system that remains after the test ends.
+
+        (12A) POSITIVE POWERS.—The term “positive powers” means the authorizations and protections that this policy grants, as set out in section 4(a), section 4(f), section 4(g), section 6(a), and section 7.
+
+        (12B) PRACTICER GENERAL.—The term “Practicer General” means the compliance officer of MEF, appointed by MEF to oversee standards, policy, law, by-laws, and similar legal compliance.
+
+        (12C) PRINZIAN SYSTEM.—The term “Prinzian system” means any system, standard, programme, service, & hoc genus omne developed or offered for use in Prinz, including any that uses, relies on, or connects to any Prinzian standard, system, network, service, or identity, & hoc genus omne. The use of any one of them suffices.
 
         (13) PROBLEM.—
             (A) IN GENERAL.—The term “problem” means a flaw in an owned system through which a person can act beyond what the owned system permits that person.
@@ -100,7 +128,9 @@ SEC. 2. DEFINITIONS.
             (B) the Help Desk; and
             (C) any email-sending pipeline.
 
-        (16) PUBLISH.—The term “publish” means to make information available to any person other than v31null.
+        (16) PUBLISH.—
+            (A) IN GENERAL.—The term “publish” means to make information available to any person other than v31null.
+            (B) REPORTS TO AUTHORITIES.—The term “publish” does not include a report of a problem to an authority competent for the matter in the country of residence or of nationality of the reporter, if the reporter has first sent the report to v31null under section 3. The reporter should give v31null notice of the report to the authority.
 
         (17) REPORT.—The term “report” means a completed report satisfying section 5.
 
@@ -321,3 +351,31 @@ SEC. 9. CLASSIFICATION OF DEVIATIONS: VERT, OR, AND GULES.
     (b) OR.—A deviation falls within Or if it involves data of another user, without involving sensitive material and without reckless or intentional disruption of a protected service, and the reporter establishes a provable absence of criminal intent, even where positive good intent is not shown. Any disposition or waiver for conduct within Or rests solely in the discretion of v31null on a case-by-case basis, considering immediate cessation, immediate deletion under section 4(c), and prompt reporting.
 
     (c) GULES.—A deviation falls within Gules if it involves any unauthorized access to, probing for, retention of, failure to immediately delete, or disclosure of sensitive material, including environment files, credentials, cryptographic keys, FRNIs, Help Desk identity documents, private eID keys, and non-public internal records, save solely for passive receipt under section 6(a) immediately cured under section 6(b) and section 4(c). Gules is subject to strict zero tolerance, with no exception, no discretionary mitigation under subsection (b), and complete forfeiture of any protection under section 7.
+
+SEC. 10. JURISDICTION.
+
+    (a) IN GENERAL.—This policy applies to each Prinzian system, in addition to and without replacing any other jurisdiction or law.
+
+    (b) MEF SYSTEMS.—The positive powers, the negative powers, and the non-interesting powers apply in full to each MEF system.
+
+    (c) OTHER PRINZIAN SYSTEMS.—Only the legal minimum applies to a Prinzian system that is not an MEF system, including that of a non-governmental organisation or a private individual. For such a system—
+        (1) the non-interesting powers are subject to the security declaration policies of its owner; and
+        (2) in the negative powers, “owned system” is read as that system and “v31null” as its owner.
+
+    (d) BINDING EFFECT.—This policy binds by itself, without adoption, each agency under MEF and each organisation registered to Prinz, which shall honour it.
+
+    (e) INTERVENTION BY MEF.—
+        (1) GROUNDS.—MEF may intervene retrospectively, but is not bound to, where—
+            (A) an agency or organisation fails to comply with this policy;
+            (B) it is unclear whether a system falls under this policy; or
+            (C) the security declaration policy of an owner lacks a provision.
+        Non-conformance with a standard is not by itself grounds for intervention.
+        (2) FORM.—Each finding, order, and measure shall be a PDF signed by MEF with an eID and shall be made public on the official platforms of MEF. No oral or informal finding, order, or measure has effect.
+        (3) CURE PERIOD.—MEF may take a measure beyond an order to comply only if the owner has not corrected within 14 days of the order to comply.
+        (4) ANSWER AND RECONSIDERATION.—The owner may answer a finding within the cure period and may ask MEF to reconsider any finding, order, or measure.
+        (5) PROPORTIONALITY.—MEF shall take the mildest measure under section 2(10B) that suffices.
+        (6) SCOPE.—A measure reaches only the system and the conduct named in the finding. A Practicer General sent to a system of a non-governmental organisation or a private individual sees only what the finding concerns.
+        (7) DURATION.—A network ban or suspension lifts once the owner corrects and otherwise lapses at the end of the term set in it, unless MEF renews it.
+        (8) RELEVANCE.—MEF may intervene, including after a system is discontinued or its owner is dissolved, only while the failure or gap remains relevant at the time of the intervention.
+        (9) STANDARD.—Conduct is judged by the more lenient of the policy in force at the time of the conduct and the current policy.
+        (10) EMERGENCY.—For a matter falling within Gules under section 9(c), or of equivalent gravity, MEF may take any measure under section 2(10B), out of order and without the cure period under paragraph (3), for 24 hours only. If the owner does not comply within those 24 hours, MEF may impose a network ban unilaterally.
